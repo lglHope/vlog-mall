@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="${#request.getContextPath() + '/'}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/notice/insert" enctype="multipart/form-data" method="post">
+    标题: <input type="text" name="title"/><br/>
+    内容: <input type="text" name="content"/><br/>
+    图片: <input type="file" name="file"/><br/>
+    作者: <input type="text" name="author"/><br/>
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>

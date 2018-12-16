@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base th:href="${#request.getContextPath() + '/'}"/>
+</head>
+<body>
+<p th:text="${notice.id}"></p>
+<p th:text="${notice.title}"></p>
+<p th:text="${notice.content}"></p>
+<p><img th:src="${path + notice.img}" style="width: 150px;height: 200px"></p>
+<p th:text="${notice.author}"></p>
+<p th:text="${notice.inserter}"></p>
+<p th:text="${notice.insertTime}"></p>
+<p th:text="${notice.updater}"></p>
+<p th:text="${notice.updateTime}"></p>
+</body>
+</html>
